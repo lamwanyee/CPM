@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid with Popup</title>
+  <link rel="stylesheet" href="effect.css" />
+  <script defer src="effect.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <h1>Consequences Of Fast Fashion</h1>
+  <div class="grid-wrapper">
+    <div class="grid-container">
+      <img data-modal-target="#modal1" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/greenhouse?v=1747911546269" alt="Greenhouse Gasses">
+      <img data-modal-target="#modal2" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/landfill?v=1747911519452" alt="Landfill">
+      <img data-modal-target="#modal3" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/microplastic?v=1747911513803" alt="Microplastic">
+      <img data-modal-target="#modal4" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/water pollution?v=1747911516904" alt="Water Pollution">
+      <img data-modal-target="#modal5" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/parasite?v=1747911953412" alt="Parasite">
+      <img data-modal-target="#modal6" src="https://cdn.glitch.global/acd7171b-2dfe-4538-8b15-14d2f4901407/energy consumption?v=1747911962246" alt="Energy Consumption">
+    </div>
+  </div>
+
+  <div class="modal" id="modal1">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">The textile consumption in the EU generated an average of 270 kilograms of carbon dioxide emissions per person. The textile products consumed in the EU account for around 121 million tonnes of greenhouse gas emissions in the region.</div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Less than half of the used clothing items are collected for reuse or recycling efforts. Only about 1% of these discarded garments are actually processed and recycled into new clothing. This highlights where a vast majority of wearable clothing ends up in landfills instead of being recycle.</div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Synthetic fibres like polyester, nylon and acrylic take hundreds of years to biodegrade. 35% of all microplastics found in the ocean come from the laundering of synthetic textiles.</div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">The fashion industry is the second-largest global consumer of water and the textile dyeing process is a major source of water pollution. It uses hazardous chemicals and large amounts of water, contaminating nearby rivers and lakes, which poses risks to aquatic life and the health of local communities.</div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">The use of pesticides, while crucial for healthy cotton growth, presents health risks to farmers who handle these chemicals. Prolonged exposure to these substances can lead to a range of health issues, including respiratory problems, skin irritations, and more severe long-term effects such as neurological disorders or increased cancer risk.</div>
+  </div>
+
+  <div class="modal" id="modal6">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Making plastic fibres into fabric is an energy-intensive process that involves several stages, including extrusion, weaving, and finishing. This manufacturing method not only consumes a large amount of energy but also releases various harmful substances into the environment. These pollutants can pose serious risks to both human health and ecosystems.</div>
+  </div>
+
+  <div id="overlay"></div>
+
+</body>
+</html>

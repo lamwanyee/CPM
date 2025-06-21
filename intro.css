@@ -1,0 +1,84 @@
+:root{
+  --base-color:#f7fbfc;  
+  --primary-color:#d6e6f2;
+  --second-color:#b9d7ea;
+  --tertiary-color:#769fcd;
+  --accent-color:#2c71bf;
+  --text-color:#1d2732;
+}
+
+body {
+  padding: none;
+  display: flex;
+  background-color: var(--base-color);
+  font-family: sans-serif;
+}
+
+main{
+  display: flex;
+}
+
+img {
+  width: 476px; 
+  height: 570px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 123px 34px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 55px 0px;
+}
+
+h1 {
+  font-size: 77px;
+  font-family: "Vidaloka", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--accent-color);
+  margin-bottom: 0px
+}
+
+p {
+  font-size: 23.3px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  text-align: left;
+  margin-top: 0px;
+  max-width: 720px;
+
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--accent-color);
+  font-size: 22px;
+  color:var(--base-color);
+  height: 59px;
+  width: 209px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+  button {
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+  }
+}
