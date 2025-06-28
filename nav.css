@@ -15,7 +15,11 @@
   --accent-color: #2c71bf;
   --text-color: #1d2732;
 }
-
+.title{
+    font-size: 50px;
+    margin-top:80px;
+    text-align: right;
+}
 * {
   margin: 0;
   padding: 0;
