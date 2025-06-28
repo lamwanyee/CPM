@@ -1,0 +1,132 @@
+:root {
+  --base-color: #f7fbfc;
+  --primary-color: #d6e6f2;
+  --second-color: #b9d7ea;
+  --tertiary-color: #769fcd;
+  --accent-color: #2c71bf;
+  --text-color: #1d2732;
+}
+
+.darkmode {
+  --base-color: #000000;
+  --primary-color: #0e1422;
+  --second-color: #3e5c76;
+  --tertiary-color: #748dac;
+  --accent-color: #2c71bf;
+  --text-color: #1d2732;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--base-color);
+}
+
+nav {
+  background-color: var(--second-color);
+  border-bottom: 5px solid var(--tertiary-color);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--tertiary-color);
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.logo span {
+  font-size: 32px;
+  font-family: "Ranchers", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 55px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.close-button:hover {
+  color: var(--tertiary-color);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: var(--second-color);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px var(--tertiary-color);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
