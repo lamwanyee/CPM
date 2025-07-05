@@ -52,6 +52,44 @@ p {
   max-width: 720px;
 
 }
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap; /* makes it mobile responsive */
+}
+
+.clothes img {
+  width: 80px;
+  margin: 10px;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 2.5em;
+  color: #3366cc;
+}
+
+.text-content strong {
+  color: black;
+}
+
+.text-content p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.text-content button {
+  background-color: #3366cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
 
 button{
   cursor: pointer;
