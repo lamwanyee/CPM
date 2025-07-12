@@ -39,7 +39,13 @@
   font-size: 1.2em;
   color: #222;
 }
-
+.bottom{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: 60px;
+  color: #2c71bf;
+}
 
 @media (max-width: 600px) {
   .container {
