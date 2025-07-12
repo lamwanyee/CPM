@@ -1,13 +1,48 @@
-:root{
-  --base-color:#f7fbfc;  
-  --primary-color:#d6e6f2;
-  --second-color:#b9d7ea;
-  --tertiary-color:#769fcd;
-  --accent-color:#2c71bf;
-  --text-color:#1d2732;
+
+* {
+  margin: 0;
+  padding: 0;
 }
-h1{
-    font-size:55px;
-    color:var(--accent-color);
-    text-align: center;
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  background-color: #cce6f5;             
+  text-align: center;
+  margin: 0 60px;
+}
+
+
+.box {
+  padding: 40px 20px;
+  border: 1px solid #b3d9ec;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+
+.box p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #222;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
