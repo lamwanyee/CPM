@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>how</title>
+  <link rel="stylesheet" href="how.css" />
+  <script defer src="how.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><button data-close-button class="close-button">&times;</button></a></li>
+      <li><a href="#">Introduction</a></li>
+      <li><a href="#">How</a></li>
+      <li><a href="#">Effects</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Why</a></li>
+    </ul>
+
+    <ul class="main-menu">
+      <li class="logo"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/LOGO?v=1748782078287" alt="Logo">
+      <span class="hideOnMobile">FF</span></li>
+      <li class="hideOnMobile"><a href="intro.html">Introduction</a></li>
+      <li class="hideOnMobile"><a href="#">How</a></li>
+      <li class="hideOnMobile"><a href="#">Effects</a></li>
+      <li class="hideOnMobile"><a href="#">Brands</a></li>
+      <li class="hideOnMobile"><a href="#">Why</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/menu?v=1748869323510"></a></li>
+    </ul>
+  </nav>
+  <h1>Consequences Of Fast Fashion</h1>  
+  <div class="grid-container">
+    <div class="card">
+      <img src="aaa.jpg" alt="Greenhouse Gasses">
+      <h2>Resist the Hauls</h2>
+      <button class="modal-button" data-modal-target="#modal1">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Greenhouse Gasses">
+      <h2>Repair Your Clothes</h2>
+      <button class="modal-button" data-modal-target="#modal2">Learn More</button>
+    </div>
+    
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Textile Waste">
+      <h2>Shop Secondhand</h2>
+      <button class="modal-button" data-modal-target="#modal3">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Textile Waste">
+      <h2>Donate or Recycle</h2>
+      <button class="modal-button" data-modal-target="#modal4">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Textile Waste">
+      <h2>Support sustainable brands</h2>
+      <button class="modal-button" data-modal-target="#modal5">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Textile Waste">
+      <h2>Create a capsule wardrobe</h2>
+      <button class="modal-button" data-modal-target="#modal6">Learn More</button>
+    </div>
+    
+    <div class="card">
+      <img src="images/landfill.jpg" alt="Textile Waste">
+      <h2>Make your voice hearde</h2>
+      <button class="modal-button" data-modal-target="#modal7">Learn More</button>
+    </div>
+  </div>
+
+  
+  <div class="modal" id="modal1">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Avoid fast fashion hauls that promote a culture of waste and overconsumption. Instead, focus on selecting high-quality pieces that are durable and timeless, ensuring your wardrobe becomes more sustainable over time.</div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Instead of resorting to new purchases when items wear out, consider mending your clothes. Simple repairs, such as sewing buttons, fixing hems, or patching holes, can significantly extend their lifespan, saving resources and money while promoting a more sustainable lifestyle.</div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body"> Embrace thrifting and secondhand shopping to reduce waste and give new life to previously loved garments. This practice not only minimizes your environmental footprint but also allows you to discover unique and vintage pieces that add character to your wardrobe.</div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Consider donating your unwanted clothing to local charities or thrift stores. You can also explore textile recycling programs that responsibly process garments, turning them into new materials and reducing landfill waste. </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body"> Before making a purchase, take the time to research a brand's sustainability practices and ethical standards. Opt for companies that prioritise eco-friendly materials, fair labour practices, and transparent supply chains, ensuring your purchases align with your values and contribute positively to the planet.</div>
+  </div>
+
+  <div class="modal" id="modal6">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Advocate for change within the fashion industry. Sign petitions, join campaigns, and encourage brands to adopt sustainable practices. By voicing your concerns and preferences, you can help push for a more responsible and environmentally conscious fashion landscape.</div>
+  </div>
+
+  <div class="modal" id="modal7">
+    <div class="modal-header"><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">Build a capsule wardrobe by curating a versatile and cohesive collection of timeless essentials that can be easily mixed and matched. Focus on quality over quantity, selecting pieces that reflect your personal style and can transition seamlessly between various occasions, simplifying your wardrobe while reducing consumption.</div>
+  </div>
+
+  <div id="overlay"></div>
+
+</body>
+</html>
