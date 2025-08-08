@@ -24,6 +24,7 @@
 body {
   min-height: 100vh;
   background-color: var(--base-color);
+  padding-bottom: 200px;
 }
 
 nav {
