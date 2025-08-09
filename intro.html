@@ -6,7 +6,7 @@
     <title>Introduction</title>
     <link rel="stylesheet" href="intro.css">
     <script defer src="intro.js"></script>
-    <script defer src="nav.js"></script>
+    <script defer src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -15,13 +15,36 @@
   </head>
   
   <body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><button data-close-button class="close-button">&times;</button></a></li>
+      <li><a href="intro.html">Introduction</a></li>
+      <li><a href="how.html">How</a></li>
+      <li><a href="effect.html">Effects</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Why</a></li>
+    </ul>
 
-  <main>
-    <img src= "https://cdn.glitch.global/05682877-b740-42f7-b077-47d831ee1fea/fastFashion?v=1749712420977" alt= "Shopping bags">
-    
-    <section>
-      <h1>What is fast fashion?</h1>
-      <p>
+    <ul class="main-menu">
+      <li class="logo"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/LOGO?v=1748782078287" alt="Logo">
+      <span class="hideOnMobile">FF</span></li>
+      <li class="hideOnMobile"><a href="intro.html">Introduction</a></li>
+      <li class="hideOnMobile"><a href="how.html">How</a></li>
+      <li class="hideOnMobile"><a href="effect.html">Effects</a></li>
+      <li class="hideOnMobile"><a href="#">Brands</a></li>
+      <li class="hideOnMobile"><a href="#">Why</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/menu?v=1748869323510"></a></li>
+    </ul>
+  </nav>
+
+<main>
+  <div class="intro">
+    <div class="intro-content">
+      <img src="https://cdn.glitch.global/05682877-b740-42f7-b077-47d831ee1fea/fastFashion?v=1749712420977" alt="Shopping bags">
+
+      <div class="intro-text">
+        <h1>What is fast fashion?</h1>
+        <p>
           Fast fashion refers to cheaply produced garments that
           copy runway styles. It is quickly manufactured and
           sold to capitalise on current trends to meet ongoing
@@ -29,9 +52,11 @@
           production, distribution, and marketing of clothing. In
           addition to that, it offers a wide variety of products at
           low prices.
-      </p>
-      <a href="effect.html" class="custom-btn"><button>Effects</button></a>
-    </section>
-  </main>
+        </p>
+        <a href="effect.html"><button>Effects</button></a>
+      </div>
+    </div>
+  </div>
+</main>
   </body>
 </html>
