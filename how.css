@@ -180,7 +180,7 @@ h1 {
 
 .card h3 {
   margin: 10px 0;
-  color: #000;
+  color: var(--text-color);
   font-size: 22px;
   font-family: "Inter", serif;
   font-weight:400;
