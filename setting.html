@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>how</title>
+  <link rel="stylesheet" href="setting.css" />
+  <script defer src="setting.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><button data-close-button class="close-button">&times;</button></a></li>
+      <li><a href="intro.html">Introduction</a></li>
+      <li><a href="effect.html">Effects</a></li>
+      <li><a href="how.html">How</a></li>
+      <li><a href="#">Why</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+
+    <ul class="main-menu">
+      <li class="logo"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/LOGO?v=1748782078287" alt="Logo">
+      <span class="hideOnMobile">FF</span></li>
+      <li class="hideOnMobile"><a href="intro.html">Introduction</a></li>
+      <li class="hideOnMobile"><a href="effect.html">Effects</a></li>
+      <li class="hideOnMobile"><a href="how.html">How</a></li>
+      <li class="hideOnMobile"><a href="#">Why</a></li>
+      <li class="hideOnMobile"><a href="#">Settings</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><img src="https://cdn.glitch.global/766c2160-655c-415c-8b70-7a9713042d75/menu?v=1748869323510"></a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <h1>Settings</h1>
+    <h2>Theme</h2>
+    <p>Choose how you like the page to appear.</p>
+
+    <div class="theme-options">
+      <div class="lightmode">
+        <img src="lightmode.png" alt="Light Mode">
+      </div>
+      <div class="darkmode">
+        <img src="darkmode.png" alt="Dark Mode">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
