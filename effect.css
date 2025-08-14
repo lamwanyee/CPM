@@ -24,7 +24,6 @@
 body {
   min-height: 100vh;
   background-color: var(--base-color);
-  padding-bottom: 200px;
 }
 
 nav {
@@ -123,7 +122,7 @@ nav a:hover {
 
 h1 {
   margin: 30px 0;
-  font-size: 77px;
+  font-size: 68.3px;
   text-align: center;
   font-family: "Vidaloka", serif;
   font-weight: 400;
@@ -237,3 +236,4 @@ h1 {
     width: 100%;
   }
 }
+
