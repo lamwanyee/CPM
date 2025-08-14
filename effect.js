@@ -8,30 +8,7 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
-
-
-let theme = localStorage.getItem('theme');
-
-const enableDarkMode = () => {
-  document.body.classList.add('dark-theme');
-  localStorage.setItem('theme', 'dark');
-  updateSelectedBorder('dark');
-};
-
-const enableLightMode = () => {
-  document.body.classList.remove('dark-theme');
-  localStorage.setItem('theme', 'light');
-  updateSelectedBorder('light');
-};
-
-if (theme === 'dark') {
-  enableDarkMode();
-} else {
-  enableLightMode();
-}
-
-
-
+document.addEventListener('DOMContentLoaded', () => {
   const openModalButtons = document.querySelectorAll('[data-modal-target]');
   const closeModalButtons = document.querySelectorAll('[data-close-button]');
   const overlay = document.getElementById('overlay');
@@ -68,3 +45,24 @@ if (theme === 'dark') {
     overlay.classList.remove('active');
   }
 });
+
+
+let theme = localStorage.getItem('theme');
+
+const enableDarkMode = () => {
+  document.body.classList.add('dark-theme');
+  localStorage.setItem('theme', 'dark');
+  updateSelectedBorder('dark');
+};
+
+const enableLightMode = () => {
+  document.body.classList.remove('dark-theme');
+  localStorage.setItem('theme', 'light');
+  updateSelectedBorder('light');
+};
+
+if (theme === 'dark') {
+  enableDarkMode();
+} else {
+  enableLightMode();
+}
