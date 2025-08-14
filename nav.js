@@ -8,23 +8,22 @@ function hideSidebar(){
 }
 
 
-let darkmode= localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch');
+let theme = localStorage.getItem('theme');
 
-const enableDarkMode= () =>{
-  document.body.classList.add('darkmode')
-  localStorage.setItem('darkmode','active')
+const enableDarkMode = () => {
+  document.body.classList.add('dark-theme');
+  localStorage.setItem('theme', 'dark');
+  updateSelectedBorder('dark');
+};
+
+const enableLightMode = () => {
+  document.body.classList.remove('dark-theme');
+  localStorage.setItem('theme', 'light');
+  updateSelectedBorder('light');
+};
+
+if (theme === 'dark') {
+  enableDarkMode();
+} else {
+  enableLightMode();
 }
-
-const disableDarkMode= () =>{
-  document.body.classList.remove('darkmode')
-  localStorage.setItem('darkmode','null')
-}
-
-if(darkmode=== "active") enableDarkMode()
-
-themeSwitch.addEventListener("click",() =>{
-  darkmode= localStorage.getItem('darkmode')
-  darkmode !=="active"? enableDarkMode(): disableDarkMode() 
-})
-
