@@ -220,11 +220,12 @@ main {
     text-align: center;
   }
 
-  .intro-text button {
+  .effect button {
     font-size: 18px;
     width: 160px;
     height: 45px;
     align-self: center;
+    justify-item: center;
   }
 }
 
