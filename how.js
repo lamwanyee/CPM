@@ -8,29 +8,26 @@ function hideSidebar() {
   sidebar.style.display = 'none';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  let darkmode = localStorage.getItem('darkmode');
-  const themeSwitch = document.getElementById('theme-switch');
+let theme = localStorage.getItem('theme');
 
-  const enableDarkMode = () => {
-    document.body.classList.add('darkmode');
-    localStorage.setItem('darkmode', 'active');
-  };
+const enableDarkMode = () => {
+  document.body.classList.add('dark-theme');
+  localStorage.setItem('theme', 'dark');
+  updateSelectedBorder('dark');
+};
 
-  const disableDarkMode = () => {
-    document.body.classList.remove('darkmode');
-    localStorage.setItem('darkmode', 'null');
-  };
+const enableLightMode = () => {
+  document.body.classList.remove('dark-theme');
+  localStorage.setItem('theme', 'light');
+  updateSelectedBorder('light');
+};
 
-  if (darkmode === 'active') enableDarkMode();
 
-  if (themeSwitch) {
-    themeSwitch.addEventListener('click', () => {
-      darkmode = localStorage.getItem('darkmode');
-      darkmode !== 'active' ? enableDarkMode() : disableDarkMode();
-    });
-  }
-
+if (theme === 'dark') {
+  enableDarkMode();
+} else {
+  enableLightMode();
+}
   const openModalButtons = document.querySelectorAll('[data-modal-target]');
   const closeModalButtons = document.querySelectorAll('[data-close-button]');
   const overlay = document.getElementById('overlay');
