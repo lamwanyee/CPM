@@ -165,6 +165,7 @@ main {
 .intro-text p {
   font-size: 25px;
   text-align: left;
+  color: var(--text-color);
 }
 
 .intro-text button {
