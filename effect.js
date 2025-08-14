@@ -10,7 +10,7 @@ function hideSidebar() {
 
 
 
- let theme = localStorage.getItem('theme');
+let theme = localStorage.getItem('theme');
 
 const enableDarkMode = () => {
   document.body.classList.add('dark-theme');
@@ -28,7 +28,8 @@ if (theme === 'dark') {
   enableDarkMode();
 } else {
   enableLightMode();
-} 
+}
+
 
 
   const openModalButtons = document.querySelectorAll('[data-modal-target]');
