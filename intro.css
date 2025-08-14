@@ -174,7 +174,7 @@ main {
   outline: none;
   background: var(--accent-color);
   font-size: 22px;
-  color: var(--base-color);
+  color: #f7fbfc;
   height: 50px;
   width: 140px;
   border-radius: 10px;
