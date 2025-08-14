@@ -66,3 +66,4 @@ if (theme === 'dark') {
 } else {
   enableLightMode();
 }
+
