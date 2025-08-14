@@ -7,23 +7,11 @@ function hideSidebar(){
   sidebar.style.display='none'
 }
 
-
-let darkmode= localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch');
-
-const enableDarkMode= () =>{
-  document.body.classList.add('darkmode')
-  localStorage.setItem('darkmode','active')
+if (theme === 'dark') {
+  enableDarkMode();
+} else {
+  enableLightMode();
 }
 
-const disableDarkMode= () =>{
-  document.body.classList.remove('darkmode')
-  localStorage.setItem('darkmode','null')
-}
-
-if(darkmode=== "active") enableDarkMode()
-
-themeSwitch.addEventListener("click",() =>{
-  darkmode= localStorage.getItem('darkmode')
-  darkmode !=="active"? enableDarkMode(): disableDarkMode() 
-})
+lightModeBtn.addEventListener('click', enableLightMode);
+darkModeBtn.addEventListener('click', enableDarkMode);
