@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const quiz = {
-    question: "In which of these countries is most fast fashion clothing manufactured?",
+    question: "How frequently do fast fashion brands typically release new collections?",
     answers: [
-      "United States",
-      "Bangladesh",
-      "Brazil",
-      "Brazil"
+      "Once every six months",
+      "Weekly or even daily",
+      "Once a month",
+      "Once a year"
     ],
     correctIndex: 1,
     explanation: "Bangladesh is one of the top countries where fast fashion clothing is made. It has low labor costs and a large garment industry. Manufacturing here allows fast fashion companies to produce large amounts of clothing quickly and cheaply."
