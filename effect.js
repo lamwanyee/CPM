@@ -66,12 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const quiz = {
     question: "In which of these countries is most fast fashion clothing manufactured?",
     answers: [
-      "United States",
       "Bangladesh",
+      "United States",
       "Brazil",
       "Brazil"
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: "Bangladesh is one of the top countries where fast fashion clothing is made. It has low labor costs and a large garment industry. Manufacturing here allows fast fashion companies to produce large amounts of clothing quickly and cheaply."
   };
 
