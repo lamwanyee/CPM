@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     question: "How frequently do fast fashion brands typically release new collections?",
     answers: [
       "Once every six months",
-      "Weekly or even daily",
       "Once a month",
+      "Weekly or even daily",
       "Once a year"
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: "Bangladesh is one of the top countries where fast fashion clothing is made. It has low labor costs and a large garment industry. Manufacturing here allows fast fashion companies to produce large amounts of clothing quickly and cheaply."
   };
 
