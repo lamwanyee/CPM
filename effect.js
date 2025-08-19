@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "Bangladesh",
       "United States",
       "Brazil",
-      "Brazil"
+      "Germany"
     ],
     correctIndex: 0,
     explanation: "Bangladesh is one of the top countries where fast fashion clothing is made. It has low labor costs and a large garment industry. Manufacturing here allows fast fashion companies to produce large amounts of clothing quickly and cheaply."
