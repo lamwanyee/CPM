@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "Once a year"
     ],
     correctIndex: 2,
-    explanation: "Bangladesh is one of the top countries where fast fashion clothing is made. It has low labor costs and a large garment industry. Manufacturing here allows fast fashion companies to produce large amounts of clothing quickly and cheaply."
+    explanation: "Fast fashion brands frequently release new collections—sometimes weekly or daily—to keep up with changing trends and encourage more purchases. This rapid turnover leads to overproduction and overconsumption, resulting in significant environmental damage and waste."
   };
 
   const questionEl = document.getElementById("question");
